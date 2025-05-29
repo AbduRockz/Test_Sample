@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Vietnam Journey | 6-Day Premium Itinerary</title>
+    <style>
+        /* Vietnam-inspired color palette */
+        :root {
+            --vietnam-red: #c41e3a;
+            --halong-blue: #0077b6;
+            --golden-bridge: #e9b824;
+            --marble-white: #f8f9fa;
+            --text-dark: #222f3e;
+            --hanoi-green: #27ae60;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: #fffdfa;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(196, 30, 58, 0.05) 0%, rgba(196, 30, 58, 0) 70%);
+            z-index: -1;
+        }
+        
+        body::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 119, 182, 0.05) 0%, rgba(0, 119, 182, 0) 70%);
+            z-index: -1;
+        }
+        
+        /* Header styling */
+        .document-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px double rgba(196, 30, 58, 0.15);
+            position: relative;
+        }
+        
+        .document-header::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--golden-bridge);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: var(--vietnam-red);
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--halong-blue);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            color: #666;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Section styling */
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin: 50px 0 30px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--vietnam-red);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background: var(--golden-bridge);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--vietnam-red), transparent);
+            margin: 50px 0;
+            opacity: 0.3;
+        }
+        
+        /* Day container */
+        .day-container {
+            background: white;
+            border-radius: 8px;
+            padding: 35px;
+            margin: 40px 0;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--halong-blue);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .day-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .day-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--vietnam-red), var(--golden-bridge));
+        }
+        
+        .day-title {
+            font-size: 1.6rem;
+            color: var(--vietnam-red);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .day-title::before {
+            content: "◆";
+            color: var(--golden-bridge);
+            margin-right: 15px;
+            font-size: 1.4rem;
+        }
+        
+        /* Timeline styling */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 25px 0;
+        }
+        
+        .timeline-item {
+            margin-bottom: 22px;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            background: white;
+            border: 2px solid var(--golden-bridge);
+            border-radius: 50%;
+            z-index: 2;
+        }
+        
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 8px;
+            width: 2px;
+            height: calc(100% + 22px);
+            background: var(--golden-bridge);
+            z-index: 1;
+        }
+        
+        .timeline-item:last-child::after {
+            height: 0;
+        }
+        
+        .timeline-time {
+            font-weight: 700;
+            color: var(--vietnam-red);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-desc {
+            line-height: 1.6;
+        }
+        
+        /* Highlight box */
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #f1f5f9 100%);
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid var(--halong-blue);
+            position: relative;
+        }
+        
+        .highlight-box::before {
+            content: "★";
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            width: 30px;
+            height: 30px;
+            background: var(--halong-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        /* Tags */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 12px;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        .meal-tag {
+            background-color: rgba(46, 204, 113, 0.12);
+            color: #27ae60;
+            border: 1px solid rgba(46, 204, 113, 0.3);
+        }
+        
+        .activity-tag {
+            background-color: rgba(52, 152, 219, 0.12);
+            color: #2980b9;
+            border: 1px solid rgba(52, 152, 219, 0.3);
+        }
+        
+        .transport-tag {
+            background-color: rgba(243, 156, 18, 0.12);
+            color: #d35400;
+            border: 1px solid rgba(243, 156, 18, 0.3);
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        th {
+            background: var(--text-dark);
+            color: white;
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9fbfd;
+        }
+        
+        .policy-table th {
+            background: var(--vietnam-red);
+        }
+        
+        .policy-table tr:nth-child(even) {
+            background-color: #fef5f5;
+        }
+        
+        /* Inclusions grid */
+        .inclusions-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 45px 0;
+        }
+        
+        .included, .excluded {
+            padding: 30px;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .included {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+            border: 1px solid rgba(52, 152, 219, 0.1);
+        }
+        
+        .excluded {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffebeb 100%);
+            border: 1px solid rgba(231, 76, 60, 0.1);
+        }
+        
+        .included h3, .excluded h3 {
+            margin-bottom: 20px;
+            color: var(--text-dark);
+            font-size: 1.4rem;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .included h3::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--halong-blue);
+            font-size: 1.8rem;
+        }
+        
+        .excluded h3::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #e74c3c;
+            font-size: 1.8rem;
+        }
+        
+        ul {
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        /* Signature */
+        .signature {
+            text-align: center;
+            margin: 60px 0 40px;
+            padding-top: 40px;
+            position: relative;
+        }
+        
+        .signature::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 2px;
+            background: linear-gradient(to right, var(--vietnam-red), var(--golden-bridge));
+        }
+        
+        .signature-text {
+            font-size: 1.4rem;
+            font-weight: 300;
+            font-style: italic;
+            color: #555;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+        
+        .signature-company {
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 50px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .footer h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        /* Decorations */
+        .vietnam-decoration {
+            text-align: center;
+            margin: 30px 0;
+            opacity: 0.7;
+        }
+        
+        .vietnam-decoration span {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: var(--vietnam-red);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .inclusions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .day-container {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="document-header">
+        <h1>VIETNAM PREMIUM JOURNEY</h1>
+        <div class="subtitle">6-Day Luxury Itinerary</div>
+        <div class="tagline">Hanoi • Halong Bay • Da Nang • Hoi An</div>
+        <div class="tagline">Crafted for Discerning Travelers</div>
+    </header>
+
+    <div class="vietnam-decoration">
+        <span>◆</span>
+        <span>⛩️</span>
+        <span>◆</span>
+        <span>⛵</span>
+        <span>◆</span>
+    </div>
+
+    <div class="section-title">AN IMMERSIVE VIETNAM EXPERIENCE</div>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; max-width: 800px;">
+        Discover Vietnam's soul through its vibrant cities, emerald seascapes, and timeless heritage. This meticulously crafted journey blends luxury accommodations, authentic cultural encounters, and breathtaking natural wonders for an unforgettable Southeast Asian sojourn.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <div class="section-title">JOURNEY AT A GLANCE</div>
+    <table class="brief-itinerary">
+        <tr>
+            <th>Day</th>
+            <th>Destination</th>
+            <th>Experience Highlights</th>
+            <th>Culinary Inclusions</th>
+        </tr>
+        <tr>
+            <td><strong>1</strong></td>
+            <td>Hanoi Arrival</td>
+            <td>Historic Quarter discovery</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td><strong>2</strong></td>
+            <td>Halong Bay</td>
+            <td>Luxury cruise, kayaking, sunset celebration</td>
+            <td>Breakfast, Lunch, Dinner</td>
+        </tr>
+        <tr>
+            <td><strong>3</strong></td>
+            <td>Da Nang Transfer</td>
+            <td>Cave exploration, coastal transition</td>
+            <td>Breakfast, Brunch</td>
+        </tr>
+        <tr>
+            <td><strong>4</strong></td>
+            <td>Hoi An Discovery</td>
+            <td>Basket boats, lantern-lit river, heritage sites</td>
+            <td>Breakfast, Dinner</td>
+        </tr>
+        <tr>
+            <td><strong>5</strong></td>
+            <td>Ba Na Hills</td>
+            <td>Golden Bridge, French Village, panoramic vistas</td>
+            <td>Breakfast, Lunch</td>
+        </tr>
+        <tr>
+            <td><strong>6</strong></td>
+            <td>Da Nang Departure</td>
+            <td>Spiritual sites, marble mountains</td>
+            <td>Breakfast</td>
+        </tr>
+    </table>
+
+    <div class="section-divider"></div>
+
+    <div class="section-title">YOUR JOURNEY UNFOLDED</div>
+
+    <!-- Day 1 -->
+    <div class="day-container">
+        <div class="day-title">Day 1: HANOI ARRIVAL - HERITAGE UNVEILED</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-time">Upon Arrival</span>
+                <div class="timeline-desc">Welcome at Noi Bai Airport with private transfer</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">2:00 PM</span>
+                <div class="timeline-desc">Check-in at Hanoi Golden Holiday Hotel</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Afternoon/Evening</span>
+                <div class="timeline-desc">Self-explore Old Quarter, Hoan Kiem Lake, Dong Xuan Market, and Train Street</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Accommodation:</strong> Hanoi Golden Holiday Hotel (Studio Double)<br>
+            <strong>Transportation:</strong> Private airport transfer (without tour guide)<br>
+            <strong>Note:</strong> All locations are walkable from your hotel in the Old Quarter
+        </div>
+        
+        <div class="tags-container">
+            <span class="tag activity-tag">Cultural Exploration</span>
+            <span class="tag transport-tag">VIP Transfer</span>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-container">
+        <div class="day-title">Day 2: HALONG BAY - EMERALD WATERS & LIMESTONE MAJESTY</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-time">6:30 AM</span>
+                <div class="timeline-desc">Breakfast at hotel</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">8:15-8:45 AM</span>
+                <div class="timeline-desc">Hotel pickup by shuttle bus with halfway break</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">11:45 AM</span>
+                <div class="timeline-desc">Arrive at Tuan Chau marina, transfer by tender</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">12:45 PM</span>
+                <div class="timeline-desc">Welcome aboard La Pandora Cruise with refreshments</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">1:00 PM</span>
+                <div class="timeline-desc">Vietnamese seafood lunch while sailing past Con Vit Islets</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">4:00 PM</span>
+                <div class="timeline-desc">Kayaking and swimming in Ong Cam Area's crystal-clear waters</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">5:30 PM</span>
+                <div class="timeline-desc">Cooking demonstration (spring rolls) and Sunset Party with local wine</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">7:00 PM</span>
+                <div class="timeline-desc">Gourmet dinner featuring local specialties</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Evening</span>
+                <div class="timeline-desc">Optional activities: Fishing excursion, movie, bar, games</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Accommodation:</strong> La Pandora Cruise (Suite Balcony)<br>
+            <strong>Meals:</strong> Breakfast, Lunch, Dinner<br>
+            <strong>Activities:</strong> Kayaking, cooking class, sunset celebration<br>
+            <strong>Note:</strong> Luggage can be brought on cruise after morning hotel checkout
+        </div>
+        
+        <div class="tags-container">
+            <span class="tag activity-tag">Premium Cruise</span>
+            <span class="tag meal-tag">Gourmet Dining</span>
+            <span class="tag transport-tag">Scenic Transfer</span>
+        </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-container">
+        <div class="day-title">Day 3: CAVES TO COAST - DA NANG'S GATEWAY</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-time">6:00 AM</span>
+                <div class="timeline-desc">Sunrise viewing on sundeck</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">6:30 AM</span>
+                <div class="timeline-desc">Light breakfast with Vietnamese coffee</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">7:15 AM</span>
+                <div class="timeline-desc">Dark & Bright Cave exploration by traditional rowboat</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">9:15 AM</span>
+                <div class="timeline-desc">Return to cruise for relaxation</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">10:00 AM</span>
+                <div class="timeline-desc">Brunch while sailing through UNESCO World Heritage scenery</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">12:00 PM</span>
+                <div class="timeline-desc">Disembark at Tuan Chau marina</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">3:00 PM</span>
+                <div class="timeline-desc">Arrival back at Hanoi hotel</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Evening</span>
+                <div class="timeline-desc">Transfer to airport for flight to Da Nang</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Late Evening</span>
+                <div class="timeline-desc">Arrival in Da Nang, transfer to hotel</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Accommodation:</strong> Senorita Boutique Hotel (Deluxe Balcony)<br>
+            <strong>Meals:</strong> Breakfast, Brunch<br>
+            <strong>Transportation:</strong> Shuttle bus + domestic flight<br>
+            <strong>Note:</strong> Seamless transfers coordinated between destinations
+        </div>
+        
+        <div class="tags-container">
+            <span class="tag activity-tag">Natural Wonders</span>
+            <span class="tag transport-tag">Air Transfer</span>
+        </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-container">
+        <div class="day-title">Day 4: HOI AN - TIMELESS HERITAGE & LANTERN GLOW</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-time">6:30 AM</span>
+                <div class="timeline-desc">Breakfast at hotel</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">12:00 PM</span>
+                <div class="timeline-desc">Hotel pickup for cultural immersion</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Afternoon</span>
+                <div class="timeline-desc">
+                    Bamboo basket boat adventure at Cam Thanh Coconut Village:<br>
+                    - Learn traditional fishing techniques<br>
+                    - Explore coconut palm waterways<br>
+                    - Hands-on cultural activities
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">2:30 PM</span>
+                <div class="timeline-desc">
+                    Hoi An Ancient Town exploration:<br>
+                    - Phuc Kien Chinese Assembly Hall<br>
+                    - Ancient Houses (Phung Hung & Tan Ky)<br>
+                    - Japanese Covered Bridge<br>
+                    - Museum of Folk Culture<br>
+                    - Traditional Performing Arts House<br>
+                    - Local handicraft shops and galleries
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Evening</span>
+                <div class="timeline-desc">Dinner with Hoi An specialty cuisine</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">6:00 PM</span>
+                <div class="timeline-desc">
+                    Lantern boat ride on Hoai River with flower lantern release<br>
+                    Immerse in lantern-lit streets and night market
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">6:30 PM</span>
+                <div class="timeline-desc">Return to Da Nang hotel</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Accommodation:</strong> Senorita Boutique Hotel<br>
+            <strong>Meals:</strong> Breakfast, Dinner<br>
+            <strong>Experiences:</strong> Basket boats, heritage tour, lantern ceremony<br>
+            <strong>Note:</strong> Comprehensive cultural insight into local Vietnamese life
+        </div>
+        
+        <div class="tags-container">
+            <span class="tag activity-tag">Cultural Heritage</span>
+            <span class="tag meal-tag">Regional Cuisine</span>
+        </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-container">
+        <div class="day-title">Day 5: BA NA HILLS - MOUNTAIN SPLENDOR & GOLDEN ELEGANCE</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-time">6:30 AM</span>
+                <div class="timeline-desc">Breakfast at hotel</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">7:30 AM</span>
+                <div class="timeline-desc">Hotel pickup via scenic coastal route</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">9:00 AM</span>
+                <div class="timeline-desc">
+                    Arrival at Ba Na Hills, cable car ascent<br>
+                    Views of Mo stream and Toc Tien waterfall
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Morning</span>
+                <div class="timeline-desc">
+                    Golden Bridge photography<br>
+                    French Village exploration (L'Jardin Zone, French Stable)<br>
+                    Linh Ung Pagoda and 27m Buddha statue
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">11:30 AM</span>
+                <div class="timeline-desc">Cable car to Nui Chua Peak - Da Nang's rooftop</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Lunch</span>
+                <div class="timeline-desc">Buffet with panoramic views</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Afternoon</span>
+                <div class="timeline-desc">
+                    Fantasy Park - Asia's modern indoor game center<br>
+                    Linh Chua Linh Tu temple visit<br>
+                    Panoramic views of Da Nang city and bay
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">5:00 PM</span>
+                <div class="timeline-desc">Cable car descent and return to Da Nang</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Accommodation:</strong> Senorita Boutique Hotel<br>
+            <strong>Meals:</strong> Breakfast, Lunch<br>
+            <strong>Activities:</strong> Cable car experience, cultural exploration<br>
+            <strong>Note:</strong> Wax Museum and Alpine Coaster not included (optional)
+        </div>
+        
+        <div class="tags-container">
+            <span class="tag activity-tag">Mountain Adventure</span>
+            <span class="tag transport-tag">Cable Car</span>
+        </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="day-container">
+        <div class="day-title">Day 6: SPIRITUAL SANCTUARIES & DEPARTURE</div>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-time">6:30 AM</span>
+                <div class="timeline-desc">Breakfast at hotel (check out before tour)</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">8:30 AM</span>
+                <div class="timeline-desc">Hotel pickup for final discoveries</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Morning</span>
+                <div class="timeline-desc">
+                    Marble Mountains exploration:<br>
+                    - Learn about Buddhism and Hinduism<br>
+                    - Spiritual and geological insights
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">10:00 AM</span>
+                <div class="timeline-desc">Am Phu Cave - journey through mythical underworld</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">11:30 AM</span>
+                <div class="timeline-desc">Lady Buddha statue at Linh Ung Pagoda (67m height)</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">1:00 PM</span>
+                <div class="timeline-desc">Return to hotel for luggage collection</div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-time">Afternoon</span>
+                <div class="timeline-desc">Private transfer to Da Nang Airport for departure</div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Meal:</strong> Breakfast<br>
+            <strong>Transportation:</strong> Private airport transfer<br>
+            <strong>Experiences:</strong> Spiritual exploration, geological wonders<br>
+            <strong>Note:</strong> Transfer timing based on flight schedule
+        </div>
+        
+        <div class="tags-container">
+            <span class="tag activity-tag">Spiritual Journey</span>
+            <span class="tag transport-tag">Departure Transfer</span>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="section-title">PREMIUM ACCOMMODATIONS</div>
+    <table>
+        <tr>
+            <th>Destination</th>
+            <th>Property</th>
+            <th>Room Type</th>
+            <th>Features</th>
+        </tr>
+        <tr>
+            <td>Hanoi</td>
+            <td>Hanoi Golden Holiday Hotel</td>
+            <td>Studio Double</td>
+            <td>Heart of Old Quarter, modern comfort</td>
+        </tr>
+        <tr>
+            <td>Halong Bay</td>
+            <td>La Pandora Cruise</td>
+            <td>Suite Balcony (1st Floor)</td>
+            <td>Private balcony, premium amenities</td>
+        </tr>
+        <tr>
+            <td>Da Nang</td>
+            <td>Senorita Boutique Hotel</td>
+            <td>Deluxe Balcony</td>
+            <td>City views, central location</td>
+        </tr>
+    </table>
+
+    <div class="section-divider"></div>
+
+    <div class="section-title">JOURNEY INCLUSIONS</div>
+    <div class="inclusions-grid">
+        <div class="included">
+            <h3>Your Experience Includes</h3>
+            <ul>
+                <li>Premium accommodations with daily breakfast</li>
+                <li>All meals specified: 4 Breakfasts, 3 Lunches, 2 Dinners</li>
+                <li>All activities & entrance fees as detailed in itinerary</li>
+                <li>English-speaking guides throughout</li>
+                <li>Private airport transfers in luxury vehicles</li>
+                <li>Modern air-conditioned transportation</li>
+                <li>Daily mineral water (500ml/person)</li>
+                <li>Halong Bay cruise with balcony suite</li>
+                <li>Ba Na Hills cable car tickets</li>
+                <li>Cooking demonstration on cruise</li>
+                <li>All specified boat rides and kayaking</li>
+                <li>Lantern boat experience in Hoi An</li>
+                <li>All transfers as specified in itinerary</li>
+            </ul>
+        </div>
+        
+        <div class="excluded">
+            <h3>Not Included</h3>
+            <ul>
+                <li>International flights</li>
+                <li>Domestic flight (Hanoi → Da Nang)</li>
+                <li>Vietnam visa (JE-Visa)</li>
+                <li>Travel insurance</li>
+                <li>Personal gratuities for guides and staff</li>
+                <li>Optional experiences (Wax Museum, Alpine Coaster)</li>
+                <li>Meals beyond specified itinerary</li>
+                <li>Personal expenses & souvenirs</li>
+                <li>Services not explicitly mentioned</li>
+                <li>Mountain climbing experience at Ba Na Hills</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="section-title">FAMILY TRAVEL POLICY</div>
+    <table class="policy-table">
+        <tr>
+            <th>Age Category</th>
+            <th>Pricing Structure</th>
+            <th>Accommodation</th>
+            <th>Conditions</th>
+        </tr>
+        <tr>
+            <td>Infants (0-3 years)</td>
+            <td>Complimentary</td>
+            <td>Shared with parents</td>
+            <td>Maximum one infant per room</td>
+        </tr>
+        <tr>
+            <td>Children (4-9 years)</td>
+            <td>75% of adult rate</td>
+            <td>Shared bedding with parents</td>
+            <td>Extra bed supplement: 85% rate</td>
+        </tr>
+        <tr>
+            <td>Youth (10+ years)</td>
+            <td>Full adult rate</td>
+            <td>Dedicated bedding</td>
+            <td>Considered adult for all services</td>
+        </tr>
+    </table>
+
+    <div class="signature">
+        <div class="signature-text">
+            "We craft journeys that transform travelers into storytellers, where every moment becomes a cherished memory and Vietnam's soul reveals itself through unparalleled experiences."
+        </div>
+        <div class="signature-company">PREMIER VIETNAM JOURNEYS</div>
+    </div>
+
+    <div class="footer">
+        <h3>Ready to Experience Vietnam?</h3>
+        <p>Contact our travel specialists to book your premium journey</p>
+        <p></p>
+    </div>
+
+    <script>
+        // Add subtle animations to timeline items
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            timelineItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(-20px)';
+                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateX(0)';
+                }, 300 + (index * 150));
+            });
+            
+            // Add hover effect to itinerary days
+            const itineraryDays = document.querySelectorAll('.day-container');
+            itineraryDays.forEach(day => {
+                day.addEventListener('mouseenter', () => {
+                    day.style.boxShadow = '0 15px 40px rgba(0,0,0,0.12)';
+                });
+                day.addEventListener('mouseleave', () => {
+                    day.style.boxShadow = '0 6px 30px rgba(0,0,0,0.08)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
